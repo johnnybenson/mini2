@@ -9,7 +9,7 @@
     <!-- add song form -->
     <div class="box">
         <h2>Add a song</h2>
-        <form action="/songs/addsong" method="POST">
+        <form action="/songs/add" method="POST">
             <input type="text" name="artist" value="" placeholder="Artist" required />
             <input type="text" name="track" value="" placeholder="Track" required />
             <input type="text" name="link" value="" placeholder="Link" />
@@ -61,8 +61,8 @@
                     <td>{{ song.year }}</td>
                     <td>{{ song.country }}</td>
                     <td>{{ song.genre }}</td>
-                    <td><a href="/songs/deletesong/{{ song.id }}">delete</a></td>
-                    <td><a href="/songs/editsong/{{ song.id }}">edit</a></td>
+                    <td><a href="/songs/delete/{{ song.id }}">delete</a></td>
+                    <td><a href="/songs/edit/{{ song.id }}">edit</a></td>
                 </tr>
             {% endfor %}
             </tbody>

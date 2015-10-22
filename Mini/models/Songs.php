@@ -1,10 +1,10 @@
 <?php
 
-namespace Mini\Model;
+namespace Mini\models;
 
 use PDO;
 
-class Model
+class Songs
 {
     /**
      * The database connection
